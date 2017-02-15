@@ -1,0 +1,82 @@
+
+    <!-- The main content view -->
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <fragment android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/map" tools:context=".PinActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pinDropButton"
+            android:layout_gravity="bottom|right|end"
+
+            android:src="@mipmap/ic_action_pin"
+            android:background="@drawable/fab"
+            android:elevation="12dp"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:layout_marginRight="16dp"
+            android:minWidth="75dp"
+            android:minHeight="75dp"
+            android:layout_marginBottom="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Status:"
+            android:id="@+id/statusText"
+            android:layout_gravity="left|top"
+            android:elevation="12dp"
+            android:textSize="18dp"
+            android:textColor="@color/abc_primary_text_material_light"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Lat: \nLong:"
+            android:id="@+id/latLongText"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="66dp"
+            android:elevation="20dp"
+            android:maxLines="2"
+            android:textColor="@color/abc_primary_text_material_light"
+            android:layout_marginLeft="16dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/splash"
+            android:layout_gravity="center"
+            android:background="@android:color/background_dark"
+            android:alpha="0.80"
+            android:src="@mipmap/usf_splash"
+            android:visibility="visible"
+            android:scaleType="fitXY"
+            android:focusable="false"
+            android:elevation="20dp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:layout_gravity="center"
+            android:alpha="1"
+            android:src="@mipmap/logo"
+            android:visibility="visible"
+            android:elevation="25dp" />
+
+
+
+    </FrameLayout>

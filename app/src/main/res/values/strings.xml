@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DropPin</string>
+    <string name="title_activity_pin">DropPin</string>
+    <string name="google_maps_key">AIzaSyBAKFwLWKuQCto4hlD9-GrwYBgQHgulwOY</string>
+
+    <string name="viewdev">Visit developer site</string>
+</resources>

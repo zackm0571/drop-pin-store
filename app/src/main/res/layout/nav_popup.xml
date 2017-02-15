@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:minWidth="300dp"
+    android:minHeight="200dp"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:measureAllChildren="true"
+    android:background="#ff03202b"
+    android:alpha=".8">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="left|top"
+        android:src="@mipmap/logo"
+        android:scaleType="fitXY"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pin1"
+        android:tag = "pin1"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="16dp"
+        android:src="@android:drawable/ic_menu_add"
+        android:alpha=".5"
+        android:scaleType="fitXY"
+        android:onClick="onClickSavedMarker"
+        android:longClickable="true"
+        android:clickable="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pin2"
+        android:tag = "pin2"
+        android:layout_gravity="center"
+        android:layout_marginRight="24dp"
+        android:alpha=".5"
+        android:src="@android:drawable/ic_menu_add"
+        android:scaleType="fitXY"
+        android:onClick="onClickSavedMarker"
+        android:clickable="true"
+        android:longClickable="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pin3"
+        android:tag = "pin3"
+        android:layout_gravity="right|center_vertical"
+        android:src="@android:drawable/ic_menu_add"
+        android:alpha=".5"
+        android:scaleType="fitXY"
+        android:layout_marginRight="64dp"
+        android:onClick="onClickSavedMarker"
+        android:clickable="true"
+        android:longClickable="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pin4"
+        android:tag = "pin4"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="16dp"
+        android:src="@android:drawable/ic_menu_add"
+        android:alpha=".5"
+        android:scaleType="fitXY"
+        android:onClick="onClickSavedMarker"
+        android:longClickable="true"
+        android:clickable="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pin5"
+        android:tag = "pin5"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginRight="24dp"
+        android:src="@android:drawable/ic_menu_add"
+        android:alpha=".5"
+        android:scaleType="fitXY"
+        android:onClick="onClickSavedMarker"
+        android:clickable="true"
+        android:longClickable="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pin6"
+        android:tag = "pin6"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="64dp"
+        android:src="@android:drawable/ic_menu_add"
+        android:alpha=".5"
+        android:scaleType="fitXY"
+        android:onClick="onClickSavedMarker"
+        android:clickable="true"
+        android:longClickable="true" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/anonPinButton"
+        android:layout_gravity="right|top"
+        android:src="@mipmap/ic_action_pin"
+        android:background="@color/ColorPrimary"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="onLocationAction"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/anonButton"
+        android:layout_gravity="right|top"
+        android:src="@mipmap/anon_small"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.7"
+        android:onClick="toggleAnonymousPinning" />
+
+    <TextView
+        android:layout_width="48sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/pin1text"
+        android:tag = "pin1text"
+        android:textSize="12sp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="left|center_vertical"
+        android:editable="false"
+        android:maxLength="8"
+
+        android:clickable="false"
+        android:layout_marginBottom="25dp"
+        android:textColor="@android:color/primary_text_dark"
+        android:textAlignment="center"
+        android:gravity="center|center_horizontal" />
+
+    <TextView
+        android:layout_width="48sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/pin2text"
+        android:tag = "pin2text"
+        android:textSize="12sp"
+        android:layout_marginRight="24dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:editable="false"
+        android:maxLength="8"
+        android:clickable="false"
+        android:layout_marginBottom="25dp"
+        android:textColor="@android:color/primary_text_dark"
+        android:textAlignment="center"
+        android:gravity="center|center_horizontal" />
+
+    <TextView
+        android:layout_width="48sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/pin3text"
+        android:tag = "pin3text"
+        android:textSize="12sp"
+        android:layout_marginRight="68dp"
+        android:layout_gravity="right|center_vertical"
+        android:editable="false"
+        android:maxLength="8"
+        android:clickable="false"
+        android:singleLine="false"
+        android:layout_marginBottom="25dp"
+        android:textColor="@android:color/primary_text_dark"
+        android:textAlignment="center"
+        android:gravity="center|center_horizontal" />
+
+    <TextView
+        android:layout_width="48sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/pin4text"
+        android:tag = "pin4text"
+        android:textSize="12sp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="left|bottom"
+        android:editable="false"
+        android:maxLength="8"
+        android:layout_marginBottom="48dp"
+        android:clickable="false"
+        android:textColor="@android:color/primary_text_dark"
+        android:textAlignment="center"
+        android:gravity="center|center_horizontal" />
+
+    <TextView
+        android:layout_width="48sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/pin5text"
+        android:tag = "pin5text"
+        android:textSize="12sp"
+        android:layout_marginRight="24dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:editable="false"
+        android:maxLength="8"
+        android:layout_marginBottom="48dp"
+        android:clickable="false"
+        android:textColor="@android:color/primary_text_dark"
+        android:textAlignment="center"
+        android:gravity="center|center_horizontal" />
+
+    <TextView
+        android:layout_width="48sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/pin6text"
+        android:tag = "pin6text"
+        android:textSize="12sp"
+        android:layout_marginRight="68dp"
+        android:layout_gravity="right|bottom"
+        android:editable="false"
+        android:maxLength="8"
+        android:layout_marginBottom="48dp"
+        android:clickable="false"
+        android:textColor="@android:color/primary_text_dark"
+        android:textAlignment="center"
+        android:gravity="center|center_horizontal" />
+
+</FrameLayout>
